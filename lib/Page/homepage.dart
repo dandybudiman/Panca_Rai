@@ -209,8 +209,7 @@ class _HomePageState extends State<HomePage>
                                   )),
                             ),
                           ),
-                          Flexible(
-                            flex: 1,
+                          Container(
                             child: Align(
                               alignment: Alignment.center,
                               child: Container(
@@ -479,111 +478,109 @@ class _HomePageState extends State<HomePage>
                                   )),
                             ),
                           ),
-                          Flexible(
-                            flex: 1,
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Container(
-                                //color: Colors.red,
-                                width: screenSize.width,
-                                height: 100,
-                                child: Row(
-                                  children: [
-                                    Align(
-                                      alignment: Alignment.center,
-                                      child: Container(
-                                        width: 150,
-                                        height: 50,
-                                        margin: EdgeInsets.only(left: 40),
-                                        child: Image.asset(
-                                          'images/logo.png',
-                                        ),
+                          Align(
+                            alignment: Alignment.center,
+                            child: Container(
+                              //color: Colors.red,
+                              width: screenSize.width,
+                              height: 100,
+                              child: Row(
+                                children: [
+                                  Align(
+                                    alignment: Alignment.center,
+                                    child: Container(
+                                      width: 150,
+                                      height: 50,
+                                      margin: EdgeInsets.only(left: 40),
+                                      child: Image.asset(
+                                        'images/logo.png',
                                       ),
                                     ),
-                                    Expanded(
-                                      flex: 2,
-                                      child: Container(
-                                        width: double.infinity,
-                                      ),
+                                  ),
+                                  Expanded(
+                                    flex: 2,
+                                    child: Container(
+                                      width: double.infinity,
                                     ),
-                                    Container(
-                                      margin: EdgeInsets.only(
-                                          bottom: 20, right: 30),
-                                      child: Icon(
-                                        Icons.line_style,
-                                        size: 50,
-                                      ),
-                                    )
-                                    // Align(
-                                    //   alignment: Alignment.center,
-                                    //   child: Container(
-                                    //     margin: EdgeInsets.only(right: 20),
-                                    //     color: Colors.transparent,
-                                    //     child: TextButton(
-                                    //       onPressed: () {},
-                                    //       child: Text(
-                                    //         "Home",
-                                    //         style: TextStyle(
-                                    //             color: Colors.white,
-                                    //             fontSize: 22,
-                                    //             fontWeight: FontWeight.w400),
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    // Align(
-                                    //   alignment: Alignment.center,
-                                    //   child: Container(
-                                    //     margin: EdgeInsets.only(right: 20),
-                                    //     child: TextButton(
-                                    //       onPressed: () {
-                                    //         _scrollController.animateTo(
-                                    //             _scrollController.position.extentInside,
-                                    //             duration: Duration(seconds: 2),
-                                    //             curve: Curves.fastOutSlowIn);
-                                    //       },
-                                    //       child: Text(
-                                    //         "About Us",
-                                    //         style: TextStyle(
-                                    //             color: Colors.white, fontSize: 22),
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    // Align(
-                                    //   alignment: Alignment.center,
-                                    //   child: Container(
-                                    //     margin: EdgeInsets.only(right: 40),
-                                    //     child: TextButton(
-                                    //       onPressed: () {
-                                    //         _scrollController.animateTo(
-                                    //             _scrollController
-                                    //                 .position.maxScrollExtent,
-                                    //             duration: Duration(seconds: 2),
-                                    //             curve: Curves.fastOutSlowIn);
-                                    //       },
-                                    //       child: Text(
-                                    //         "Select Character",
-                                    //         style: TextStyle(
-                                    //             color: Colors.white, fontSize: 22),
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                  ],
-                                ),
+                                  ),
+                                  Container(
+                                    margin:
+                                        EdgeInsets.only(bottom: 20, right: 30),
+                                    child: Icon(
+                                      Icons.line_style,
+                                      size: 50,
+                                    ),
+                                  )
+                                  // Align(
+                                  //   alignment: Alignment.center,
+                                  //   child: Container(
+                                  //     margin: EdgeInsets.only(right: 20),
+                                  //     color: Colors.transparent,
+                                  //     child: TextButton(
+                                  //       onPressed: () {},
+                                  //       child: Text(
+                                  //         "Home",
+                                  //         style: TextStyle(
+                                  //             color: Colors.white,
+                                  //             fontSize: 22,
+                                  //             fontWeight: FontWeight.w400),
+                                  //       ),
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                  // Align(
+                                  //   alignment: Alignment.center,
+                                  //   child: Container(
+                                  //     margin: EdgeInsets.only(right: 20),
+                                  //     child: TextButton(
+                                  //       onPressed: () {
+                                  //         _scrollController.animateTo(
+                                  //             _scrollController.position.extentInside,
+                                  //             duration: Duration(seconds: 2),
+                                  //             curve: Curves.fastOutSlowIn);
+                                  //       },
+                                  //       child: Text(
+                                  //         "About Us",
+                                  //         style: TextStyle(
+                                  //             color: Colors.white, fontSize: 22),
+                                  //       ),
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                  // Align(
+                                  //   alignment: Alignment.center,
+                                  //   child: Container(
+                                  //     margin: EdgeInsets.only(right: 40),
+                                  //     child: TextButton(
+                                  //       onPressed: () {
+                                  //         _scrollController.animateTo(
+                                  //             _scrollController
+                                  //                 .position.maxScrollExtent,
+                                  //             duration: Duration(seconds: 2),
+                                  //             curve: Curves.fastOutSlowIn);
+                                  //       },
+                                  //       child: Text(
+                                  //         "Select Character",
+                                  //         style: TextStyle(
+                                  //             color: Colors.white, fontSize: 22),
+                                  //       ),
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                ],
                               ),
                             ),
                           ),
-                          // Positioned(top: _fore * _scrollOffset, child: NavBar()),
-                          Positioned(
-                            top: screenSize.height +
-                                (_fore * _scrollOffset * -1),
-                            height: screenSize.height,
-                            child: Column(
-                              children: [],
-                            ),
-                          ),
+                          // Positioned(
+                          //     top: _fore * _scrollOffset, child: NavBar()),
+                          // Positioned(
+                          //   top: screenSize.height +
+                          //       (_fore * _scrollOffset * -1),
+                          //   height: screenSize.height,
+                          //   child: Column(
+                          //     children: [],
+                          //   ),
+                          // ),
                           // Positioned.fill(
                           //     child: SingleChildScrollView(
                           //   controller: _scrollController,

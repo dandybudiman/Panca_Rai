@@ -602,7 +602,7 @@ class _Section3State extends State<Section3> {
                                       builder: (context) => Section2()));
                             } else if (_current == 1) {
                               await launchUrl(Uri.parse(
-                                  'https://machiiko.github.io/portofolio-nada/'));
+                                  'https://machiiko.github.io/bilhaqi-pdf/'));
                             } else if (_current == 2) {
                               Navigator.push(
                                   context,
