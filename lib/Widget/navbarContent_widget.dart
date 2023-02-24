@@ -31,7 +31,7 @@ class _NavBarState extends State<NavBar> {
                   height: 50,
                   margin: EdgeInsets.only(left: 40),
                   child: Image.asset(
-                    'images/logo.png',
+                    'assets/images/logo.png',
                   ),
                 ),
               ),
@@ -125,7 +125,7 @@ class _NavBar2State extends State<NavBar2> {
           Container(
             margin: EdgeInsets.only(left: 40, top: 10),
             child: Image.asset(
-              'images/logo.png',
+              'assets/images/logo.png',
               width: 150,
               height: 50,
             ),

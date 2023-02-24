@@ -72,7 +72,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(15),
                                 child: Image.asset(
-                                  'images/gradient_sky.png',
+                                  'assets/images/gradient_sky.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -84,11 +84,11 @@ class _Section3MobileState extends State<Section3Mobile> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: isHovering == true
                                   ? Image.asset(
-                                      'images/nada_1.png',
+                                      'assets/images/nada_1.png',
                                       fit: BoxFit.cover,
                                     )
                                   : Image.asset(
-                                      'images/nada_2.png',
+                                      'assets/images/nada_2.png',
                                       fit: BoxFit.cover,
                                     ),
                             ),
@@ -116,7 +116,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(15),
                                 child: Image.asset(
-                                  'images/gradient_sky.png',
+                                  'assets/images/gradient_sky.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -128,11 +128,11 @@ class _Section3MobileState extends State<Section3Mobile> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: isHovering == true
                                   ? Image.asset(
-                                      'images/nada_1.png',
+                                      'assets/images/nada_1.png',
                                       fit: BoxFit.cover,
                                     )
                                   : Image.asset(
-                                      'images/nada_2.png',
+                                      'assets/images/nada_2.png',
                                       fit: BoxFit.cover,
                                     ),
                             ),
@@ -160,7 +160,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(15),
                                 child: Image.asset(
-                                  'images/gradient_sky.png',
+                                  'assets/images/gradient_sky.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -172,11 +172,11 @@ class _Section3MobileState extends State<Section3Mobile> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: isHovering == true
                                   ? Image.asset(
-                                      'images/nada_1.png',
+                                      'assets/images/nada_1.png',
                                       fit: BoxFit.cover,
                                     )
                                   : Image.asset(
-                                      'images/nada_2.png',
+                                      'assets/images/nada_2.png',
                                       fit: BoxFit.cover,
                                     ),
                             ),
@@ -204,7 +204,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(15),
                                 child: Image.asset(
-                                  'images/gradient_sky.png',
+                                  'assets/images/gradient_sky.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -216,11 +216,11 @@ class _Section3MobileState extends State<Section3Mobile> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: isHovering == true
                                   ? Image.asset(
-                                      'images/nada_1.png',
+                                      'assets/images/nada_1.png',
                                       fit: BoxFit.cover,
                                     )
                                   : Image.asset(
-                                      'images/nada_2.png',
+                                      'assets/images/nada_2.png',
                                       fit: BoxFit.cover,
                                     ),
                             ),
@@ -248,7 +248,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(15),
                                 child: Image.asset(
-                                  'images/gradient_sky.png',
+                                  'assets/images/gradient_sky.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -260,11 +260,11 @@ class _Section3MobileState extends State<Section3Mobile> {
                                   borderRadius: BorderRadius.circular(20)),
                               child: isHovering == true
                                   ? Image.asset(
-                                      'images/nada_1.png',
+                                      'assets/images/nada_1.png',
                                       fit: BoxFit.cover,
                                     )
                                   : Image.asset(
-                                      'images/nada_2.png',
+                                      'assets/images/nada_2.png',
                                       fit: BoxFit.cover,
                                     ),
                             ),

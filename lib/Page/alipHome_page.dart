@@ -55,7 +55,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                   //     height: 50,
                                   //     margin: EdgeInsets.only(left: 40),
                                   //     child: Image.asset(
-                                  //       'images/logo.png',
+                                  //       'assets/images/logo.png',
                                   //     ),
                                   //   ),
                                   // ),
@@ -217,7 +217,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                         width: 600,
                                         height: 700,
                                         child: Image.asset(
-                                          'Images/alifbeneran.png',
+                                          'assets/images/alifbeneran.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),

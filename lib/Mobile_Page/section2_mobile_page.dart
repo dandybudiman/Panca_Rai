@@ -78,7 +78,7 @@ class _Section2MobileState extends State<Section2Mobile> {
                     margin: EdgeInsets.only(top: 20),
                     width: 328,
                     child: Image.asset(
-                      'images/nada_1.png',
+                      'assets/images/nada_1.png',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -113,7 +113,7 @@ class _Section2MobileState extends State<Section2Mobile> {
                   ),
                   // Container(
                   //   child: Image.asset(
-                  //     'images/nada_1.png',
+                  //     'assets/images/nada_1.png',
                   //     fit: BoxFit.cover,
                   //   ),
                   // ),
@@ -125,7 +125,7 @@ class _Section2MobileState extends State<Section2Mobile> {
           //   flex: 1,
           //   child: Container(
           //     child: Image.asset(
-          //       'images/nada_1.png',
+          //       'assets/images/nada_1.png',
           //       fit: BoxFit.cover,
           //     ),
           //   ),

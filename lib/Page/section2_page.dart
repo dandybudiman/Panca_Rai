@@ -102,7 +102,7 @@ class _Section2State extends State<Section2> {
             flex: 1,
             child: Container(
               child: Image.asset(
-                'images/nada_1.png',
+                'assets/images/nada_1.png',
                 fit: BoxFit.cover,
               ),
             ),

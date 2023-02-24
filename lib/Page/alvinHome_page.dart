@@ -53,7 +53,7 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                                   //     height: 50,
                                   //     margin: EdgeInsets.only(left: 40),
                                   //     child: Image.asset(
-                                  //       'images/logo.png',
+                                  //       'assets/images/logo.png',
                                   //     ),
                                   //   ),
                                   // ),
@@ -232,7 +232,7 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                                                 BorderRadius.circular(15),
                                             color: Colors.white),
                                         child: Image.asset(
-                                          'Images/alifbeneran.png',
+                                          'assets/images/alifbeneran.png',
                                           fit: BoxFit.fill,
                                         ),
                                       ),

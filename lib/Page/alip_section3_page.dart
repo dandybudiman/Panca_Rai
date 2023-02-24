@@ -41,7 +41,7 @@ class _AlipSection3State extends State<AlipSection3> {
             child: Row(
               children: [
                 Container(
-                  child: Image.asset('images/coolpet.png'),
+                  child: Image.asset('assets/images/coolpet.png'),
                 ),
                 Flexible(
                   flex: 1,
@@ -118,7 +118,7 @@ class _AlipSection3State extends State<AlipSection3> {
               child: Row(
                 children: [
                   Container(
-                    child: Image.asset('images/ics.png'),
+                    child: Image.asset('assets/images/ics.png'),
                   ),
                   Flexible(
                     flex: 4,
@@ -197,7 +197,7 @@ class _AlipSection3State extends State<AlipSection3> {
               child: Row(
                 children: [
                   Container(
-                    child: Image.asset('images/pancarai.png'),
+                    child: Image.asset('assets/images/pancarai.png'),
                   ),
                   Flexible(
                     flex: 4,

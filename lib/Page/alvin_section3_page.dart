@@ -29,7 +29,7 @@ class _AlvinSection3State extends State<AlvinSection3> {
             child: Row(
               children: [
                 Container(
-                  child: Image.asset('images/coolpet.png'),
+                  child: Image.asset('assets/images/coolpet.png'),
                 ),
                 Flexible(
                   flex: 1,
@@ -88,7 +88,7 @@ class _AlvinSection3State extends State<AlvinSection3> {
             child: Row(
               children: [
                 Container(
-                  child: Image.asset('images/coolpet.png'),
+                  child: Image.asset('assets/images/coolpet.png'),
                 ),
                 Flexible(
                   flex: 1,

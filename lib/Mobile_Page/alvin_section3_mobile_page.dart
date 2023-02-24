@@ -22,7 +22,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Image.asset('images/coolpet.png'),
+            child: Image.asset('assets/images/coolpet.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -63,7 +63,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
               )),
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Image.asset('images/coolpet.png'),
+            child: Image.asset('assets/images/coolpet.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -110,7 +110,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
           //     child: Row(
           //       children: [
           //         Container(
-          //           child: Image.asset('images/ics.png'),
+          //           child: Image.asset('assets/images/ics.png'),
           //         ),
           //         Flexible(
           //           flex: 4,
@@ -188,7 +188,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
           //     child: Row(
           //       children: [
           //         Container(
-          //           child: Image.asset('images/pancarai.png'),
+          //           child: Image.asset('assets/images/pancarai.png'),
           //         ),
           //         Flexible(
           //           flex: 4,

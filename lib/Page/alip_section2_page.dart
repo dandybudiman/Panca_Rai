@@ -62,7 +62,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/html.png',
+                                'assets/images/html.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -72,7 +72,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/css.png',
+                                'assets/images/css.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -82,7 +82,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/js.png',
+                                'assets/images/js.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -92,7 +92,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/bootstrap.png',
+                                'assets/images/bootstrap.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -102,7 +102,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/photoshop.png',
+                                'assets/images/photoshop.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -123,7 +123,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/tailwind.png',
+                                'assets/images/tailwind.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -133,7 +133,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/php.png',
+                                'assets/images/php.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -143,7 +143,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/python.png',
+                                'assets/images/python.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -153,7 +153,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/figma.png',
+                                'assets/images/figma.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -163,7 +163,7 @@ class _AlipSection2State extends State<AlipSection2> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Image.asset(
-                                'images/premire.png',
+                                'assets/images/premire.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

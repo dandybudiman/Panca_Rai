@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/gradient_sky.png',
+                                'assets/images/gradient_sky.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/moon_1.png',
+                                'assets/images/moon_1.png',
                                 color: Color.fromRGBO(43, 30, 130, 200)
                                     .withOpacity(1),
                                 colorBlendMode: BlendMode.screen,
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/background.png',
+                                'assets/images/background.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/stars.png',
+                                'assets/images/stars.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage>
                               height: screenSize.height > 713
                                   ? screenSize.height
                                   : 715,
-                              child: Image.asset('images/meteor.png'),
+                              child: Image.asset('assets/images/meteor.png'),
                             ),
                           ),
                           Positioned(
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/foreground.png',
+                                'assets/images/foreground.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage>
                                         height: 50,
                                         margin: EdgeInsets.only(left: 40),
                                         child: Image.asset(
-                                          'images/logo.png',
+                                          'assets/images/logo.png',
                                         ),
                                       ),
                                     ),
@@ -348,7 +348,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/gradient_sky.png',
+                                'assets/images/gradient_sky.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -361,7 +361,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/moon_1.png',
+                                'assets/images/moon_1.png',
                                 color: Color.fromRGBO(43, 30, 130, 200)
                                     .withOpacity(1),
                                 colorBlendMode: BlendMode.screen,
@@ -378,7 +378,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/background.png',
+                                'assets/images/background.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -391,7 +391,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/stars.png',
+                                'assets/images/stars.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -403,7 +403,7 @@ class _HomePageState extends State<HomePage>
                               height: screenSize.height > 713
                                   ? screenSize.height
                                   : 715,
-                              child: Image.asset('images/meteor.png'),
+                              child: Image.asset('assets/images/meteor.png'),
                             ),
                           ),
                           Positioned(
@@ -437,7 +437,7 @@ class _HomePageState extends State<HomePage>
                                   ? screenSize.height
                                   : 715,
                               child: Image.asset(
-                                'images/foreground.png',
+                                'assets/images/foreground.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -493,7 +493,7 @@ class _HomePageState extends State<HomePage>
                                       height: 50,
                                       margin: EdgeInsets.only(left: 40),
                                       child: Image.asset(
-                                        'images/logo.png',
+                                        'assets/images/logo.png',
                                       ),
                                     ),
                                   ),

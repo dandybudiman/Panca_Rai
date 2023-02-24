@@ -35,7 +35,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
 
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Image.asset('images/coolpet.png'),
+            child: Image.asset('assets/images/coolpet.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -74,7 +74,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
               )),
           Container(
             margin: EdgeInsets.only(top: 80),
-            child: Image.asset('images/ics.png'),
+            child: Image.asset('assets/images/ics.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -113,7 +113,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
               )),
           Container(
             margin: EdgeInsets.only(top: 80),
-            child: Image.asset('images/pancarai.png'),
+            child: Image.asset('assets/images/pancarai.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -158,7 +158,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
           //     child: Row(
           //       children: [
           //         Container(
-          //           child: Image.asset('images/ics.png'),
+          //           child: Image.asset('assets/images/ics.png'),
           //         ),
           //         Flexible(
           //           flex: 4,
@@ -236,7 +236,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
           //     child: Row(
           //       children: [
           //         Container(
-          //           child: Image.asset('images/pancarai.png'),
+          //           child: Image.asset('assets/images/pancarai.png'),
           //         ),
           //         Flexible(
           //           flex: 4,
