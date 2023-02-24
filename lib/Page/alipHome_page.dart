@@ -8,6 +8,7 @@ import 'package:web_project/Mobile_Page/alip_section2_mobile_page.dart';
 import 'package:web_project/Mobile_Page/alip_section3_mobile_page.dart';
 import 'package:web_project/Page/alip_section2_page.dart';
 import 'package:web_project/Page/alip_section3_page.dart';
+import 'package:web_project/Widget/footer_widget.dart';
 
 class AlipHomePage extends StatefulWidget {
   const AlipHomePage({super.key});
@@ -177,7 +178,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                               child: OutlinedButton(
                                                 onPressed: () async {
                                                   await launchUrl(Uri.parse(
-                                                      'https://drive.google.com/uc?export=download&id=1fKhuvT0XKa_4vNYiEm4Js7fkIHrz8wnj'));
+                                                      'https://drive.google.com/uc?export=download&id=19n60bR11KqbqfbUQY1YFKqpNKspbgwRB'));
                                                 },
                                                 child: Text(
                                                   "Download CV",
@@ -212,7 +213,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                   Flexible(
                                     flex: 5,
                                     child: Align(
-                                      alignment: Alignment.topCenter,
+                                      alignment: Alignment.bottomCenter,
                                       child: Container(
                                         width: 600,
                                         height: 700,
@@ -240,6 +241,9 @@ class _AlipHomePageState extends State<AlipHomePage> {
               child: screenSize.width < 900
                   ? AlipSection3Mobile()
                   : AlipSection3(),
+            ),
+            Container(
+              child: FooterAlip(),
             ),
           ],
         ),

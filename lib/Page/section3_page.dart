@@ -17,6 +17,9 @@ class Section3 extends StatefulWidget {
 }
 
 class _Section3State extends State<Section3> {
+  bool isHovering2 = false;
+  bool isHovering3 = false;
+  bool isHovering4 = false;
   bool isHovering = false;
   int _current = 0;
   final CarouselController _carouselController = CarouselController();
@@ -129,7 +132,7 @@ class _Section3State extends State<Section3> {
                       InkWell(
                         onHover: (val) {
                           setState(() {
-                            isHovering = val;
+                            isHovering2 = val;
                           });
                         },
                         onTap: () {},
@@ -155,7 +158,7 @@ class _Section3State extends State<Section3> {
                                 height: 500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20)),
-                                child: isHovering == true
+                                child: isHovering2 == true
                                     ? Image.asset(
                                         'assets/images/nada_1.png',
                                         fit: BoxFit.cover,
@@ -173,7 +176,7 @@ class _Section3State extends State<Section3> {
                       InkWell(
                         onHover: (val) {
                           setState(() {
-                            isHovering = val;
+                            isHovering3 = val;
                           });
                         },
                         onTap: () {},
@@ -199,13 +202,13 @@ class _Section3State extends State<Section3> {
                                 height: 500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20)),
-                                child: isHovering == true
+                                child: isHovering3 == true
                                     ? Image.asset(
-                                        'assets/images/nada_1.png',
+                                        'assets/images/alpin_1.png',
                                         fit: BoxFit.cover,
                                       )
                                     : Image.asset(
-                                        'assets/images/nada_2.png',
+                                        'assets/images/alpin_2.png',
                                         fit: BoxFit.cover,
                                       ),
                               ),
@@ -217,7 +220,7 @@ class _Section3State extends State<Section3> {
                       InkWell(
                         onHover: (val) {
                           setState(() {
-                            isHovering = val;
+                            isHovering4 = val;
                           });
                         },
                         onTap: () {},
@@ -243,13 +246,13 @@ class _Section3State extends State<Section3> {
                                 height: 500,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20)),
-                                child: isHovering == true
+                                child: isHovering4 == true
                                     ? Image.asset(
-                                        'assets/images/nada_1.png',
+                                        'assets/images/alip_1.png',
                                         fit: BoxFit.cover,
                                       )
                                     : Image.asset(
-                                        'assets/images/nada_2.png',
+                                        'assets/images/alip_2.png',
                                         fit: BoxFit.cover,
                                       ),
                               ),
@@ -289,11 +292,11 @@ class _Section3State extends State<Section3> {
                                     borderRadius: BorderRadius.circular(20)),
                                 child: isHovering == true
                                     ? Image.asset(
-                                        'assets/images/nada_1.png',
+                                        'assets/images/batit_2.png',
                                         fit: BoxFit.cover,
                                       )
                                     : Image.asset(
-                                        'assets/images/nada_2.png',
+                                        'assets/images/batit_1.png',
                                         fit: BoxFit.cover,
                                       ),
                               ),
