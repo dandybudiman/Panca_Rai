@@ -15,7 +15,11 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
     var screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width,
-      height: 1400,
+      height: screenSize.height < 1500
+          ? 1500
+          : screenSize.width < 900
+              ? 1500
+              : screenSize.height,
       color: Color(0xffDDD0C8),
       child: Column(
         children: [
@@ -84,7 +88,7 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
                     Align(
                       alignment: Alignment.center,
                       child: Container(
-                        margin: EdgeInsets.only(top: 30),
+                        margin: EdgeInsets.only(top: 30, right: 20, left: 20),
                         child: Text(
                           "INTERNATIONAL CAR SHOW",
                           style: TextStyle(

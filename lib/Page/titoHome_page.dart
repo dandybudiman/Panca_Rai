@@ -1,40 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:web_project/Mobile_Page/alipHome_mobile_page.dart';
-import 'package:web_project/Mobile_Page/alip_section2_mobile_page.dart';
-import 'package:web_project/Mobile_Page/alip_section3_mobile_page.dart';
+import 'package:web_project/Mobile_Page/alvinHome_mobile_page.dart';
+import 'package:web_project/Mobile_Page/alvin_section2_mobile_page.dart';
+import 'package:web_project/Mobile_Page/alvin_section3_mobile_page.dart';
 import 'package:web_project/Page/alip_section2_page.dart';
-import 'package:web_project/Page/alip_section3_page.dart';
-import 'package:web_project/Widget/footer_widget.dart';
+import 'package:web_project/Page/alvin_section2_page.dart';
+import 'package:web_project/Page/alvin_section3_page.dart';
 
-class AlipHomePage extends StatefulWidget {
-  const AlipHomePage({super.key});
+class TitoHomePage extends StatefulWidget {
+  const TitoHomePage({super.key});
 
   @override
-  State<AlipHomePage> createState() => _AlipHomePageState();
+  State<TitoHomePage> createState() => _TitoHomePageState();
 }
 
-class _AlipHomePageState extends State<AlipHomePage> {
-  late ScrollController _scrollController;
-  void initState() {
-    super.initState();
-    _scrollController = ScrollController();
-  }
-
-  // final Uri _url = Uri.parse(
-  //     'https://drive.google.com/uc?export=download&id=1fKhuvT0XKa_4vNYiEm4Js7fkIHrz8wnj');
+class _TitoHomePageState extends State<TitoHomePage> {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        controller: _scrollController,
         child: Column(
           children: [
-            screenSize.width < 900
+            screenSize.width < 1130
                 ? Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -45,14 +35,14 @@ class _AlipHomePageState extends State<AlipHomePage> {
                             : screenSize.width < 900
                                 ? 900
                                 : screenSize.height,
-                        color: Color(0xffDDD0C8),
+                        color: Color(0xff5D2D8E),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Align(
                               alignment: Alignment.topCenter,
                               child: Container(
-                                margin: EdgeInsets.only(bottom: 60),
+                                margin: EdgeInsets.only(top: 30),
                                 //color: Colors.red,
                                 width: screenSize.width,
                                 height: 100,
@@ -60,7 +50,8 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     Container(
-                                      margin: EdgeInsets.only(bottom: 50),
+                                      margin: EdgeInsets.only(
+                                          bottom: 50, right: 30),
                                       child: Icon(
                                         Icons.line_style,
                                         size: 50,
@@ -154,12 +145,11 @@ class _AlipHomePageState extends State<AlipHomePage> {
                               ),
                             ),
                             Align(
-                              alignment: Alignment.center,
+                              alignment: Alignment.topCenter,
                               child: Container(
-                                margin: EdgeInsets.only(
-                                    top: 56, left: 20, right: 20),
+                                margin: EdgeInsets.only(left: 20, right: 20),
                                 child: Container(
-                                  width: 400,
+                                  width: 600,
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
@@ -167,18 +157,21 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                         alignment: Alignment.centerLeft,
                                         child: Container(
                                           child: Text(
-                                            "Hi, I'am Alif, FrontEnd Developer",
+                                            "Alvin Alfarizi Putra L.",
                                             style: TextStyle(
                                                 fontSize: 22,
-                                                fontWeight: FontWeight.w700),
+                                                fontWeight: FontWeight.w700,
+                                                color: Colors.white),
                                           ),
                                         ),
                                       ),
                                       Container(
                                         margin: EdgeInsets.only(top: 40),
                                         child: Text(
-                                          "My name is Ananda Alif Raditya, i was born in Jakarta, 28 November 2005. Im School at SMK 1 Perguruan Cikini, my dream is to become the most richest man in this planet",
-                                          style: TextStyle(fontSize: 16),
+                                          "My Name is Alvin Alfarizi, i'm a fresh graduate of SMK 1 Perguruan Cikini majoring in computer and network engineer and Amateur programmer. I was born on Jakarta, 14 Desember 2005. I like playing some music and do programming. I'm kind of game maker since I make my three games. I have a huge interest in programming world. Programming make me feel challengged and I like to be challenged.",
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       // Align(
@@ -214,13 +207,17 @@ class _AlipHomePageState extends State<AlipHomePage> {
                               ),
                             ),
                             Align(
-                              alignment: Alignment.topCenter,
+                              alignment: Alignment.center,
                               child: Container(
-                                width: 600,
-                                height: 500,
+                                margin: EdgeInsets.only(top: 80),
+                                width: 220,
+                                height: 320,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: Colors.white),
                                 child: Image.asset(
                                   'assets/images/alifbeneran.png',
-                                  fit: BoxFit.cover,
+                                  fit: BoxFit.fill,
                                 ),
                               ),
                             )
@@ -231,12 +228,12 @@ class _AlipHomePageState extends State<AlipHomePage> {
                   )
                 : Container(
                     width: screenSize.width,
-                    height: screenSize.height < 670
-                        ? 670
+                    height: screenSize.height < 720
+                        ? 720
                         : screenSize.width < 900
-                            ? 670
+                            ? 720
                             : screenSize.height,
-                    color: Color(0xffDDD0C8),
+                    color: Colors.white,
                     child: Column(
                       children: [
                         Flexible(
@@ -294,15 +291,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                     child: Container(
                                       margin: EdgeInsets.only(right: 20),
                                       child: TextButton(
-                                        onPressed: () {
-                                          _scrollController.position
-                                              .applyViewportDimension(800);
-                                          _scrollController.animateTo(
-                                              _scrollController
-                                                  .position.viewportDimension,
-                                              duration: Duration(seconds: 2),
-                                              curve: Curves.fastOutSlowIn);
-                                        },
+                                        onPressed: () {},
                                         child: Text(
                                           "Skills",
                                           style: TextStyle(
@@ -317,15 +306,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                     child: Container(
                                       margin: EdgeInsets.only(right: 40),
                                       child: TextButton(
-                                        onPressed: () {
-                                          _scrollController.position
-                                              .applyViewportDimension(1600);
-                                          _scrollController.animateTo(
-                                              _scrollController
-                                                  .position.viewportDimension,
-                                              duration: Duration(seconds: 2),
-                                              curve: Curves.fastOutSlowIn);
-                                        },
+                                        onPressed: () {},
                                         child: Text(
                                           "Project",
                                           style: TextStyle(
@@ -340,13 +321,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                     child: Container(
                                       margin: EdgeInsets.only(right: 40),
                                       child: TextButton(
-                                        onPressed: () {
-                                          _scrollController.animateTo(
-                                              _scrollController
-                                                  .position.maxScrollExtent,
-                                              duration: Duration(seconds: 2),
-                                              curve: Curves.fastOutSlowIn);
-                                        },
+                                        onPressed: () {},
                                         child: Text(
                                           "Contact",
                                           style: TextStyle(
@@ -373,22 +348,30 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                     child: Container(
                                       margin:
                                           EdgeInsets.only(left: 202, top: 100),
-                                      width: 506,
+                                      width: 600,
                                       child: Column(
                                         children: [
-                                          Container(
-                                            child: Text(
-                                              "Hi, I'am Alif, FrontEnd Developer",
-                                              style: TextStyle(
-                                                  fontSize: 44,
-                                                  fontWeight: FontWeight.w700),
+                                          Align(
+                                            alignment: Alignment.topLeft,
+                                            child: Container(
+                                              child: Text(
+                                                "Hi, I am Bagus Tito Wijoyo FrontEnd Developer",
+                                                style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 44,
+                                                    fontWeight:
+                                                        FontWeight.w700),
+                                                textAlign: TextAlign.start,
+                                              ),
                                             ),
                                           ),
                                           Container(
                                             margin: EdgeInsets.only(top: 40),
                                             child: Text(
-                                              "My name is Ananda Alif Raditya, i was born in Jakarta, 28 November 2005. Im School at SMK 1 Perguruan Cikini, my dream is to become the most richest man in this planet",
-                                              style: TextStyle(fontSize: 16),
+                                              "Hola!, My Name is Bagus Tito wijoyo, i’m 11 grade In SMK 1 Perguruan Cikini. I’m learning HTML, CSS, javaScript, Unity, and React.",
+                                              style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.black),
                                             ),
                                           ),
                                           Align(
@@ -400,7 +383,7 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                               child: OutlinedButton(
                                                 onPressed: () async {
                                                   await launchUrl(Uri.parse(
-                                                      'https://drive.google.com/uc?export=download&id=19n60bR11KqbqfbUQY1YFKqpNKspbgwRB'));
+                                                      'https://drive.google.com/uc?export=download&id=1fKhuvT0XKa_4vNYiEm4Js7fkIHrz8wnj'));
                                                 },
                                                 child: Text(
                                                   "Download CV",
@@ -433,15 +416,24 @@ class _AlipHomePageState extends State<AlipHomePage> {
                                   //   ),
                                   // ),
                                   Flexible(
-                                    flex: 5,
+                                    flex: 6,
                                     child: Align(
-                                      alignment: Alignment.bottomCenter,
+                                      alignment: Alignment.centerRight,
                                       child: Container(
-                                        width: 600,
-                                        height: 700,
+                                        margin: EdgeInsets.only(
+                                            top: 20,
+                                            right: 20,
+                                            bottom: 20,
+                                            left: 5),
+                                        width: 320,
+                                        height: 420,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(15),
+                                            color: Colors.white),
                                         child: Image.asset(
                                           'assets/images/alifbeneran.png',
-                                          fit: BoxFit.cover,
+                                          fit: BoxFit.fill,
                                         ),
                                       ),
                                     ),
@@ -455,17 +447,14 @@ class _AlipHomePageState extends State<AlipHomePage> {
                     ),
                   ),
             Container(
-              child: screenSize.width < 900
-                  ? AlipSection2Mobile()
-                  : AlipSection2(),
+              child: screenSize.width < 620
+                  ? AlvinSection2Mobile()
+                  : AlvinSection2(),
             ),
             Container(
               child: screenSize.width < 900
-                  ? AlipSection3Mobile()
-                  : AlipSection3(),
-            ),
-            Container(
-              child: FooterAlip(),
+                  ? AlvinSection3Mobile()
+                  : AlvinSection3(),
             ),
           ],
         ),
