@@ -8,6 +8,7 @@ import 'package:web_project/Mobile_Page/alvin_section3_mobile_page.dart';
 import 'package:web_project/Page/alip_section2_page.dart';
 import 'package:web_project/Page/alvin_section2_page.dart';
 import 'package:web_project/Page/alvin_section3_page.dart';
+import 'package:web_project/Page/tito_section2_page.dart';
 
 class TitoHomePage extends StatefulWidget {
   const TitoHomePage({super.key});
@@ -50,11 +51,18 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     Container(
+                                      width: 50,
+                                      height: 50,
                                       margin: EdgeInsets.only(
                                           bottom: 50, right: 30),
-                                      child: Icon(
-                                        Icons.line_style,
-                                        size: 50,
+                                      child: ElevatedButton(
+                                        onPressed: () {},
+                                        style: ElevatedButton.styleFrom(
+                                            backgroundColor: Colors.white,
+                                            elevation: 0),
+                                        child: Image.asset(
+                                            'assets/images/garisgaris.png',
+                                            fit: BoxFit.cover),
                                       ),
                                     )
                                   ],
@@ -74,50 +82,23 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                         alignment: Alignment.centerLeft,
                                         child: Container(
                                           child: Text(
-                                            "Alvin Alfarizi Putra L.",
+                                            "Hi, I am Bagus Tito Wijoyo FrontEnd Developer",
                                             style: TextStyle(
                                                 fontSize: 22,
                                                 fontWeight: FontWeight.w700,
-                                                color: Colors.white),
+                                                color: Colors.black),
                                           ),
                                         ),
                                       ),
                                       Container(
                                         margin: EdgeInsets.only(top: 40),
                                         child: Text(
-                                          "My Name is Alvin Alfarizi, i'm a fresh graduate of SMK 1 Perguruan Cikini majoring in computer and network engineer and Amateur programmer. I was born on Jakarta, 14 Desember 2005. I like playing some music and do programming. I'm kind of game maker since I make my three games. I have a huge interest in programming world. Programming make me feel challengged and I like to be challenged.",
+                                          "Hola!, My Name is Bagus Tito wijoyo, i’m 11 grade In SMK 1 Perguruan Cikini. I’m learning HTML, CSS, javaScript, Unity, and React.",
                                           style: TextStyle(
                                               fontSize: 16,
-                                              color: Colors.white),
+                                              color: Colors.black),
                                         ),
                                       ),
-                                      // Align(
-                                      //   alignment: Alignment.topLeft,
-                                      //   child: Container(
-                                      //     width: 208,
-                                      //     height: 47,
-                                      //     margin: EdgeInsets.only(top: 49),
-                                      //     child: OutlinedButton(
-                                      //       onPressed: () async {
-                                      //         await launchUrl(Uri.parse(
-                                      //             'https://drive.google.com/uc?export=download&id=1fKhuvT0XKa_4vNYiEm4Js7fkIHrz8wnj'));
-                                      //       },
-                                      //       child: Text(
-                                      //         "Download CV",
-                                      //         style: TextStyle(
-                                      //             fontSize: 20,
-                                      //             fontWeight: FontWeight.w500,
-                                      //             color: Colors.white),
-                                      //       ),
-                                      //       style: OutlinedButton.styleFrom(
-                                      //         backgroundColor: Color(0xff323232),
-                                      //         shape: RoundedRectangleBorder(
-                                      //           borderRadius: BorderRadius.circular(10),
-                                      //         ),
-                                      //       ),
-                                      //     ),
-                                      //   ),
-                                      // )
                                     ],
                                   ),
                                 ),
@@ -133,7 +114,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                     borderRadius: BorderRadius.circular(15),
                                     color: Colors.white),
                                 child: Image.asset(
-                                  'assets/images/alifbeneran.png',
+                                  'assets/images/batitbagus.png',
                                   fit: BoxFit.fill,
                                 ),
                               ),
@@ -366,7 +347,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
             Container(
               child: screenSize.width < 620
                   ? AlvinSection2Mobile()
-                  : AlvinSection2(),
+                  : TitoSection2(),
             ),
             Container(
               child: screenSize.width < 900
