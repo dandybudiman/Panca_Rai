@@ -52,6 +52,8 @@ class _HomePageState extends State<HomePage>
     });
   }
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
   double _fore = 0.6;
   double _meteor = 0.8;
   double _bintang = 0.2;
@@ -63,6 +65,81 @@ class _HomePageState extends State<HomePage>
     var screenSize = MediaQuery.of(context).size;
     var _height = screenSize * 3;
     return Scaffold(
+      drawer: Drawer(
+        backgroundColor: Colors.transparent,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Align(
+              alignment: Alignment.topLeft,
+              child: Container(
+                margin: EdgeInsets.only(left: 20),
+                width: 200,
+                height: 100,
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Container(
+                  margin: EdgeInsets.only(left: 20),
+                  child: TextButton(
+                    onPressed: () {
+                      _scrollController.position.applyViewportDimension(900);
+                      _scrollController.animateTo(
+                          _scrollController.position.viewportDimension,
+                          duration: Duration(seconds: 2),
+                          curve: Curves.fastOutSlowIn);
+                    },
+                    child: Text(
+                      "Skills",
+                      style: TextStyle(fontSize: 22, color: Colors.white),
+                    ),
+                  )),
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Container(
+                  margin: EdgeInsets.only(left: 20, top: 20),
+                  child: TextButton(
+                    onPressed: () {
+                      _scrollController.position.applyViewportDimension(1800);
+                      _scrollController.animateTo(
+                          _scrollController.position.viewportDimension,
+                          duration: Duration(seconds: 2),
+                          curve: Curves.fastOutSlowIn);
+                    },
+                    child: Text(
+                      "Project",
+                      style: TextStyle(fontSize: 22, color: Colors.white),
+                    ),
+                  )),
+            ),
+            Align(
+              alignment: Alignment.topLeft,
+              child: Container(
+                  margin: EdgeInsets.only(left: 20, top: 20),
+                  child: TextButton(
+                    onPressed: () {
+                      _scrollController.position.applyViewportDimension(900);
+                      _scrollController.animateTo(
+                          _scrollController.position.maxScrollExtent,
+                          duration: Duration(seconds: 2),
+                          curve: Curves.fastOutSlowIn);
+                    },
+                    child: Text(
+                      "Contact",
+                      style: TextStyle(fontSize: 22, color: Colors.white),
+                    ),
+                  )),
+            ),
+          ],
+        ),
+      ),
+      key: _scaffoldKey,
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(
@@ -504,13 +581,23 @@ class _HomePageState extends State<HomePage>
                                     ),
                                   ),
                                   Container(
+                                    width: 50,
+                                    height: 50,
                                     margin:
-                                        EdgeInsets.only(bottom: 20, right: 30),
-                                    child: Icon(
-                                      Icons.line_style,
-                                      size: 50,
+                                        EdgeInsets.only(bottom: 50, right: 30),
+                                    child: ElevatedButton(
+                                      onPressed: () {
+                                        _scaffoldKey.currentState?.openDrawer();
+                                      },
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.white,
+                                          elevation: 0),
+                                      child: Image.asset(
+                                          'assets/images/garisgaris.png',
+                                          fit: BoxFit.cover),
                                     ),
                                   )
+
                                   // Align(
                                   //   alignment: Alignment.center,
                                   //   child: Container(

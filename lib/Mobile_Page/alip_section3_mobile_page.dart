@@ -24,9 +24,9 @@ class _AlipSection3MobileState extends State<AlipSection3Mobile> {
       child: Column(
         children: [
           Align(
-            alignment: Alignment.topLeft,
+            alignment: Alignment.center,
             child: Container(
-              margin: EdgeInsets.only(top: 40, left: 40),
+              margin: EdgeInsets.only(top: 40),
               child: Text(
                 "Project",
                 style: TextStyle(

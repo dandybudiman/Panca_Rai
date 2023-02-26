@@ -21,7 +21,7 @@ class MyWeb extends StatelessWidget {
         ),
         title: 'Tes',
         debugShowCheckedModeBanner: false,
-        home: TitoHomePage()
+        home: HomePage()
         //ResponsiveLayout(
         //  mobileScreen: HomePageMobile(), dekstopScreen: HomePage()),
         );

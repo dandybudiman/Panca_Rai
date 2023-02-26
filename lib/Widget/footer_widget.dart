@@ -124,7 +124,7 @@ class _FooterTitoState extends State<FooterTito> {
                     await launchUrl(Uri.parse('https://wa.me/6285706269269'));
                   },
                   child: Image.asset(
-                    'assets/images/fb.png',
+                    'assets/images/wa.png',
                     fit: BoxFit.cover,
                   ),
                 ),
