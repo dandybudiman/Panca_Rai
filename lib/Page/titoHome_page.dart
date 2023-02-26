@@ -35,7 +35,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
                             : screenSize.width < 900
                                 ? 900
                                 : screenSize.height,
-                        color: Color(0xff5D2D8E),
+                        color: Colors.white,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -57,89 +57,6 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                         size: 50,
                                       ),
                                     )
-
-                                    // Align(
-                                    //   alignment: Alignment.center,
-                                    //   child: Container(
-                                    //     width: 150,
-                                    //     height: 50,
-                                    //     margin: EdgeInsets.only(left: 40),
-                                    //     child: Image.asset(
-                                    //       'assets/images/logo.png',
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    // Expanded(
-                                    //   flex: 2,
-                                    //   child: Container(
-                                    //     width: double.infinity,
-                                    //   ),
-                                    // ),
-                                    // Align(
-                                    //   alignment: Alignment.center,
-                                    //   child: Container(
-                                    //     margin: EdgeInsets.only(right: 20),
-                                    //     color: Colors.transparent,
-                                    //     child: TextButton(
-                                    //       onPressed: () {},
-                                    //       child: Text(
-                                    //         "Home",
-                                    //         style: TextStyle(
-                                    //             color: Colors.white,
-                                    //             fontSize: 22,
-                                    //             fontWeight: FontWeight.w400),
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
-                                    //           Expanded(
-                                    //             flex: 2,
-                                    //             child: Container(
-                                    //               width: double.infinity,
-                                    //             ),
-                                    //           ),
-                                    //           Align(
-                                    //             alignment: Alignment.center,
-                                    //             child: Container(
-                                    //               margin: EdgeInsets.only(right: 20),
-                                    //               child: TextButton(
-                                    //                 onPressed: () {},
-                                    //                 child: Text(
-                                    //                   "Skills",
-                                    //                   style: TextStyle(
-                                    //                       color: Colors.black, fontSize: 22),
-                                    //                 ),
-                                    //               ),
-                                    //             ),
-                                    //           ),
-                                    //           Align(
-                                    //             alignment: Alignment.center,
-                                    //             child: Container(
-                                    //               margin: EdgeInsets.only(right: 40),
-                                    //               child: TextButton(
-                                    //                 onPressed: () {},
-                                    //                 child: Text(
-                                    //                   "Project",
-                                    //                   style: TextStyle(
-                                    //                       color: Colors.black, fontSize: 22),
-                                    //                 ),
-                                    //               ),
-                                    //             ),
-                                    //           ),
-                                    //           Align(
-                                    //             alignment: Alignment.center,
-                                    //             child: Container(
-                                    //               margin: EdgeInsets.only(right: 40),
-                                    //               child: TextButton(
-                                    //                 onPressed: () {},
-                                    //                 child: Text(
-                                    //                   "Contact",
-                                    //                   style: TextStyle(
-                                    //                       color: Colors.black, fontSize: 22),
-                                    //                 ),
-                                    //               ),
-                                    //             ),
-                                    //           )
                                   ],
                                 ),
                               ),
@@ -383,7 +300,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                               child: OutlinedButton(
                                                 onPressed: () async {
                                                   await launchUrl(Uri.parse(
-                                                      'https://drive.google.com/uc?export=download&id=1fKhuvT0XKa_4vNYiEm4Js7fkIHrz8wnj'));
+                                                      'https://drive.google.com/uc?export=download&id=1iWVj0JAxfVXuN82yr94S7t6w9QHSClLJ'));
                                                 },
                                                 child: Text(
                                                   "Download CV",
@@ -416,12 +333,12 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                   //   ),
                                   // ),
                                   Flexible(
-                                    flex: 6,
+                                    flex: 4,
                                     child: Align(
-                                      alignment: Alignment.centerRight,
+                                      alignment: Alignment.topRight,
                                       child: Container(
                                         margin: EdgeInsets.only(
-                                            top: 20,
+                                            top: 60,
                                             right: 20,
                                             bottom: 20,
                                             left: 5),
