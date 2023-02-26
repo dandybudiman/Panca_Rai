@@ -432,7 +432,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
                                                 BorderRadius.circular(15),
                                             color: Colors.white),
                                         child: Image.asset(
-                                          'assets/images/alifbeneran.png',
+                                          'assets/images/batitbagus.png',
                                           fit: BoxFit.fill,
                                         ),
                                       ),
