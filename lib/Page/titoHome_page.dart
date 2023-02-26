@@ -10,6 +10,9 @@ import 'package:web_project/Page/alvin_section2_page.dart';
 import 'package:web_project/Page/alvin_section3_page.dart';
 import 'package:web_project/Page/tito_section2_page.dart';
 import 'package:web_project/Mobile_Page/tito_section2_mobile_page.dart';
+import 'package:web_project/Page/tito_section3_page.dart';
+import 'package:web_project/Mobile_Page/tito_section3_mobile_page.dart';
+import 'package:web_project/Widget/footer_widget.dart';
 
 class TitoHomePage extends StatefulWidget {
   const TitoHomePage({super.key});
@@ -352,9 +355,12 @@ class _TitoHomePageState extends State<TitoHomePage> {
             ),
             Container(
               child: screenSize.width < 900
-                  ? AlvinSection3Mobile()
-                  : AlvinSection3(),
+                  ? TitoSection3Mobile()
+                  : TitoSection3(),
             ),
+            Container(
+              child: FooterTito(),
+            )
           ],
         ),
       ),

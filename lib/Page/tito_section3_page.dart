@@ -16,10 +16,10 @@ class _TitoSection3State extends State<TitoSection3> {
     var screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width,
-      height: screenSize.height < 750
-          ? 750
+      height: screenSize.height < 920
+          ? 920
           : screenSize.width < 900
-              ? 750
+              ? 920
               : screenSize.height,
       color: Colors.white,
       child: Column(
@@ -29,7 +29,7 @@ class _TitoSection3State extends State<TitoSection3> {
             child: Row(
               children: [
                 Container(
-                  child: Image.asset('assets/images/tindog.png'),
+                  child: Image.asset('assets/images/tindog_batit.png'),
                 ),
                 Flexible(
                   flex: 1,
@@ -43,7 +43,7 @@ class _TitoSection3State extends State<TitoSection3> {
                             child: Container(
                               margin: EdgeInsets.only(left: 50, right: 20),
                               child: Text(
-                                "CalPiao Games",
+                                "Tindog (2022)",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 30,
@@ -58,9 +58,9 @@ class _TitoSection3State extends State<TitoSection3> {
                                   EdgeInsets.only(top: 22, left: 50, right: 20),
                               width: 594,
                               child: Text(
-                                "My Personal Project to make studio games for my Passive income",
+                                "My First ever Website That i create when im learning HTML and CSS",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w400),
                               ),
@@ -80,7 +80,7 @@ class _TitoSection3State extends State<TitoSection3> {
               margin: EdgeInsets.only(top: 26, left: 50, right: 50),
               width: 1400,
               height: 4,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
           Container(
@@ -88,7 +88,7 @@ class _TitoSection3State extends State<TitoSection3> {
             child: Row(
               children: [
                 Container(
-                  child: Image.asset('assets/images/coolpet.png'),
+                  child: Image.asset('assets/images/conduart_batit.png'),
                 ),
                 Flexible(
                   flex: 1,
@@ -102,9 +102,9 @@ class _TitoSection3State extends State<TitoSection3> {
                             child: Container(
                               margin: EdgeInsets.only(left: 50, right: 20),
                               child: Text(
-                                "Panca-Rai’s Page Translator",
+                                "Conduart (2022)",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 30,
                                     fontWeight: FontWeight.w700),
                               ),
@@ -117,9 +117,9 @@ class _TitoSection3State extends State<TitoSection3> {
                                   EdgeInsets.only(top: 22, left: 50, right: 20),
                               width: 594,
                               child: Text(
-                                "My Personal Project to make studio games for my Passive income",
+                                "My First Project In SMK 1 Perguruan Cikini. Im creating Anime Exhibitions Website. The main theme of this website is Black and White",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w400),
                               ),
@@ -139,7 +139,66 @@ class _TitoSection3State extends State<TitoSection3> {
               margin: EdgeInsets.only(top: 26, left: 50, right: 50),
               width: 1400,
               height: 4,
-              color: Colors.white,
+              color: Colors.black,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 50, left: 100),
+            child: Row(
+              children: [
+                Container(
+                  child: Image.asset('assets/images/webOsis_batit.png'),
+                ),
+                Flexible(
+                  flex: 1,
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              margin: EdgeInsets.only(left: 50, right: 20),
+                              child: Text(
+                                "OSIS SMK 1 Perguruan Cikini Jakarta (2023)",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: Container(
+                              margin:
+                                  EdgeInsets.only(top: 22, left: 50, right: 20),
+                              width: 594,
+                              child: Text(
+                                "My project For Student Council that i do using HTML, CSS, javaScript.",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              margin: EdgeInsets.only(top: 26, left: 50, right: 50),
+              width: 1400,
+              height: 4,
+              color: Colors.black,
             ),
           ),
         ],
