@@ -9,6 +9,7 @@ import 'package:web_project/Page/alip_section2_page.dart';
 import 'package:web_project/Page/alvin_section2_page.dart';
 import 'package:web_project/Page/alvin_section3_page.dart';
 import 'package:web_project/Page/tito_section2_page.dart';
+import 'package:web_project/Mobile_Page/tito_section2_mobile_page.dart';
 
 class TitoHomePage extends StatefulWidget {
   const TitoHomePage({super.key});
@@ -346,7 +347,7 @@ class _TitoHomePageState extends State<TitoHomePage> {
                   ),
             Container(
               child: screenSize.width < 620
-                  ? AlvinSection2Mobile()
+                  ? TitoSection2Mobile()
                   : TitoSection2(),
             ),
             Container(

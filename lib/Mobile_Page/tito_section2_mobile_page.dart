@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class TitoSection2 extends StatefulWidget {
-  const TitoSection2({super.key});
+class TitoSection2Mobile extends StatefulWidget {
+  const TitoSection2Mobile({super.key});
 
   @override
-  State<TitoSection2> createState() => _TitoSection2State();
+  State<TitoSection2Mobile> createState() => _TitoSection2MobileState();
 }
 
-class _TitoSection2State extends State<TitoSection2> {
+class _TitoSection2MobileState extends State<TitoSection2Mobile> {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width,
-      height: 650,
+      height: 1000,
       color: Color(0xffE0E0E0),
-      child: Row(
+      child: Column(
         children: [
           Expanded(
             flex: 1,
@@ -28,7 +28,7 @@ class _TitoSection2State extends State<TitoSection2> {
           Flexible(
             flex: 7,
             child: Container(
-              margin: EdgeInsets.only(right: 20),
+              margin: EdgeInsets.only(right: 40, left: 40),
               width: 600,
               height: 460,
               decoration: BoxDecoration(
@@ -183,6 +183,7 @@ class _TitoSection2State extends State<TitoSection2> {
           Flexible(
             flex: 7,
             child: Container(
+              margin: EdgeInsets.only(right: 40, left: 40),
               width: 600,
               height: 460,
               decoration: BoxDecoration(
