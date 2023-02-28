@@ -8,6 +8,7 @@ import 'package:web_project/Mobile_Page/section3_mobile.dart';
 import 'package:web_project/Page/section1_page.dart';
 import 'package:web_project/Page/section2_page.dart';
 import 'package:web_project/Page/section3_page.dart';
+import 'package:web_project/Widget/footer_widget.dart';
 import 'package:web_project/Widget/navbarContent_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -88,7 +89,7 @@ class _HomePageState extends State<HomePage>
                   margin: EdgeInsets.only(left: 20),
                   child: TextButton(
                     onPressed: () {
-                      _scrollController.position.applyViewportDimension(900);
+                      _scrollController.position.applyViewportDimension(800);
                       _scrollController.animateTo(
                           _scrollController.position.viewportDimension,
                           duration: Duration(seconds: 2),
@@ -106,7 +107,7 @@ class _HomePageState extends State<HomePage>
                   margin: EdgeInsets.only(left: 20, top: 20),
                   child: TextButton(
                     onPressed: () {
-                      _scrollController.position.applyViewportDimension(1800);
+                      _scrollController.position.applyViewportDimension(1600);
                       _scrollController.animateTo(
                           _scrollController.position.viewportDimension,
                           duration: Duration(seconds: 2),
@@ -583,14 +584,14 @@ class _HomePageState extends State<HomePage>
                                   Container(
                                     width: 50,
                                     height: 50,
-                                    margin:
-                                        EdgeInsets.only(bottom: 50, right: 30),
+                                    margin: EdgeInsets.only(
+                                        top: 20, bottom: 30, right: 30),
                                     child: ElevatedButton(
                                       onPressed: () {
                                         _scaffoldKey.currentState?.openDrawer();
                                       },
                                       style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.white,
+                                          backgroundColor: Colors.transparent,
                                           elevation: 0),
                                       child: Image.asset(
                                           'assets/images/garisgaris.png',
@@ -713,6 +714,9 @@ class _HomePageState extends State<HomePage>
                       width: screenSize.width,
                       height: screenSize.height,
                     ),
+            ),
+            Container(
+              child: FooterMain(),
             )
           ],
         ),

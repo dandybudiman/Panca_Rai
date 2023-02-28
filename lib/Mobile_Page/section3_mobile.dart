@@ -26,10 +26,10 @@ class _Section3MobileState extends State<Section3Mobile> {
     return Container(
       color: Color(0xff01042D),
       width: screenSize.width,
-      height: screenSize.height < 900
-          ? 900
+      height: screenSize.height < 700
+          ? 700
           : screenSize.width < 900
-              ? 900
+              ? 700
               : screenheight,
       // screenheight > 1000 ? screenSize.height : 1000,
       child: Column(children: [
@@ -217,7 +217,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                               height: 300,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20)),
-                              child: isHovering == true
+                              child: isHovering4 == true
                                   ? Image.asset(
                                       'assets/images/alip_1.png',
                                       fit: BoxFit.cover,

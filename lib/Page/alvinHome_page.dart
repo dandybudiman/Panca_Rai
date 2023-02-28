@@ -8,6 +8,7 @@ import 'package:web_project/Mobile_Page/alvin_section3_mobile_page.dart';
 import 'package:web_project/Page/alip_section2_page.dart';
 import 'package:web_project/Page/alvin_section2_page.dart';
 import 'package:web_project/Page/alvin_section3_page.dart';
+import 'package:web_project/Widget/footer_widget.dart';
 
 class AlvinHomePage extends StatefulWidget {
   const AlvinHomePage({super.key});
@@ -321,11 +322,11 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                                 width: 220,
                                 height: 320,
                                 decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(30),
                                     color: Colors.white),
                                 child: Image.asset(
-                                  'assets/images/alifbeneran.png',
-                                  fit: BoxFit.fill,
+                                  'assets/images/alvinmerah.png',
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             )
@@ -533,15 +534,15 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                                             right: 20,
                                             bottom: 20,
                                             left: 5),
-                                        width: 320,
+                                        width: 310,
                                         height: 420,
                                         decoration: BoxDecoration(
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(45),
                                             color: Colors.white),
                                         child: Image.asset(
-                                          'assets/images/alifbeneran.png',
-                                          fit: BoxFit.fill,
+                                          'assets/images/alvinmerah.png',
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),
@@ -564,6 +565,9 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                   ? AlvinSection3Mobile()
                   : AlvinSection3(),
             ),
+            Container(
+              child: FooterAlvin(),
+            )
           ],
         ),
       ),
