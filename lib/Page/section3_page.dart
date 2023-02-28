@@ -679,10 +679,8 @@ class _Section3State extends State<Section3> {
                         child: OutlinedButton(
                           onPressed: () async {
                             if (_current == 0) {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => TitoHomePage()));
+                              await launchUrl(Uri.parse(
+                                  'https://machiiko.github.io/dedi-punya/'));
                             } else if (_current == 1) {
                               await launchUrl(Uri.parse(
                                   'https://machiiko.github.io/bilhaqi-pdf/'));
