@@ -594,7 +594,7 @@ class _HomePageState extends State<HomePage>
                                           backgroundColor: Colors.transparent,
                                           elevation: 0),
                                       child: Image.asset(
-                                          'assets/images/garisgaris.png',
+                                          'assets/images/garisgarisputih.png',
                                           fit: BoxFit.cover),
                                     ),
                                   )

@@ -8,6 +8,7 @@ import 'package:web_project/Page/alipHome_page.dart';
 import 'package:web_project/Page/alvinHome_page.dart';
 import 'package:web_project/Page/homepage.dart';
 import 'package:web_project/Page/section2_page.dart';
+import 'package:web_project/Page/titoHome_page.dart';
 
 class Section3 extends StatefulWidget {
   const Section3({super.key});
@@ -336,7 +337,7 @@ class _Section3State extends State<Section3> {
                             margin: EdgeInsets.only(bottom: 50),
                             child: _current == 0
                                 ? Text(
-                                    "Programer",
+                                    "Main Developer",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 36,
@@ -369,7 +370,7 @@ class _Section3State extends State<Section3> {
                                               )
                                             : _current == 4
                                                 ? Text(
-                                                    "Software Tester",
+                                                    "Developer",
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize: 36,
@@ -497,14 +498,14 @@ class _Section3State extends State<Section3> {
                                                       )
                                                     : _current == 3
                                                         ? Text(
-                                                            "Jakarta, 14 Desember 2005",
+                                                            "Jakarta, 28 November 2005",
                                                             style: TextStyle(
                                                                 color: Colors
                                                                     .white),
                                                           )
                                                         : _current == 4
                                                             ? Text(
-                                                                "Jakarta, 21 Febuari 2023",
+                                                                "Jakarta, 16 September 2023",
                                                                 style: TextStyle(
                                                                     color: Colors
                                                                         .white),
@@ -524,7 +525,7 @@ class _Section3State extends State<Section3> {
                                     alignment: Alignment.centerLeft,
                                     child: Container(
                                       child: Text(
-                                        "Age",
+                                        "SKILLS",
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 28),
                                         textAlign: TextAlign.left,
@@ -534,21 +535,71 @@ class _Section3State extends State<Section3> {
                                   Align(
                                     alignment: Alignment.centerLeft,
                                     child: Container(
-                                      width: 541,
-                                      height: 39,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                          color: Color(0xff4F518E)),
-                                      child: Container(
-                                        margin:
-                                            EdgeInsets.only(top: 10, left: 10),
-                                        child: Text(
-                                          "17 Years old",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
-                                    ),
+                                        width: 541,
+                                        height: 39,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            color: Color(0xff4F518E)),
+                                        child: _current == 0
+                                            ? Container(
+                                                margin: EdgeInsets.only(
+                                                    top: 10, left: 10),
+                                                child: Text(
+                                                  "Flutter, HTML, CSS, JS, Python, Lightroom",
+                                                  style: TextStyle(
+                                                      color: Colors.white),
+                                                ),
+                                              )
+                                            : _current == 1
+                                                ? Container(
+                                                    margin: EdgeInsets.only(
+                                                        top: 10, left: 10),
+                                                    child: Text(
+                                                      "Photoshop, Illustrator, Premiere Pro",
+                                                      style: TextStyle(
+                                                          color: Colors.white),
+                                                    ),
+                                                  )
+                                                : _current == 2
+                                                    ? Container(
+                                                        margin: EdgeInsets.only(
+                                                            top: 10, left: 10),
+                                                        child: Text(
+                                                          "Computer networking and analysing",
+                                                          style: TextStyle(
+                                                              color:
+                                                                  Colors.white),
+                                                        ),
+                                                      )
+                                                    : _current == 3
+                                                        ? Container(
+                                                            margin:
+                                                                EdgeInsets.only(
+                                                                    top: 10,
+                                                                    left: 10),
+                                                            child: Text(
+                                                              "HTML, CSS, JS, Python, Figma",
+                                                              style: TextStyle(
+                                                                  color: Colors
+                                                                      .white),
+                                                            ),
+                                                          )
+                                                        : _current == 4
+                                                            ? Container(
+                                                                margin: EdgeInsets
+                                                                    .only(
+                                                                        top: 10,
+                                                                        left:
+                                                                            10),
+                                                                child: Text(
+                                                                  "HTML, CSS, JS, React, Unity",
+                                                                  style: TextStyle(
+                                                                      color: Colors
+                                                                          .white),
+                                                                ),
+                                                              )
+                                                            : null),
                                   )
                                 ],
                               ),
@@ -560,7 +611,7 @@ class _Section3State extends State<Section3> {
                                     alignment: Alignment.centerLeft,
                                     child: Container(
                                       child: Text(
-                                        "Dream",
+                                        "MOTTO",
                                         style: TextStyle(
                                             color: Colors.white, fontSize: 28),
                                         textAlign: TextAlign.left,
@@ -577,13 +628,42 @@ class _Section3State extends State<Section3> {
                                               BorderRadius.circular(10),
                                           color: Color(0xff4F518E)),
                                       child: Container(
-                                        margin:
-                                            EdgeInsets.only(top: 10, left: 10),
-                                        child: Text(
-                                          "Multi talent",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
+                                          margin: EdgeInsets.only(
+                                              top: 10, left: 10),
+                                          child: _current == 0
+                                              ? Text(
+                                                  "Do everything i want",
+                                                  style: TextStyle(
+                                                      color: Colors.white),
+                                                )
+                                              : _current == 1
+                                                  ? Text(
+                                                      " Happiness, success, meaning",
+                                                      style: TextStyle(
+                                                          color: Colors.white),
+                                                    )
+                                                  : _current == 2
+                                                      ? Text(
+                                                          "Talk less do more",
+                                                          style: TextStyle(
+                                                              color:
+                                                                  Colors.white),
+                                                        )
+                                                      : _current == 3
+                                                          ? Text(
+                                                              "dont be an option, be the only one eh",
+                                                              style: TextStyle(
+                                                                  color: Colors
+                                                                      .white),
+                                                            )
+                                                          : _current == 4
+                                                              ? Text(
+                                                                  " Always, Pray to god",
+                                                                  style: TextStyle(
+                                                                      color: Colors
+                                                                          .white),
+                                                                )
+                                                              : null),
                                     ),
                                   )
                                 ],
@@ -602,7 +682,7 @@ class _Section3State extends State<Section3> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Section2()));
+                                      builder: (context) => TitoHomePage()));
                             } else if (_current == 1) {
                               await launchUrl(Uri.parse(
                                   'https://machiiko.github.io/bilhaqi-pdf/'));
@@ -620,7 +700,7 @@ class _Section3State extends State<Section3> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => AlipHomePage()));
+                                      builder: (context) => TitoHomePage()));
                             }
                           },
                           child: Text(

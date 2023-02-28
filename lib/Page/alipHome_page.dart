@@ -3,7 +3,6 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:web_project/Mobile_Page/alipHome_mobile_page.dart';
 import 'package:web_project/Mobile_Page/alip_section2_mobile_page.dart';
 import 'package:web_project/Mobile_Page/alip_section3_mobile_page.dart';
 import 'package:web_project/Page/alip_section2_page.dart';

@@ -294,7 +294,7 @@ class _FooterAlvinState extends State<FooterAlvin> {
                         'http://discord.com/users/563626096290037780'));
                   },
                   child: Image.asset(
-                    'assets/images/dc.png',
+                    'assets/images/dcputih.png',
                     fit: BoxFit.cover,
                   ),
                 ),

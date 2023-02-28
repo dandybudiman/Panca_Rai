@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:web_project/Page/alipHome_page.dart';
+import 'package:web_project/Page/alvinHome_page.dart';
 import 'package:web_project/Page/homepage.dart';
 import 'package:web_project/Page/section2_page.dart';
+import 'package:web_project/Page/titoHome_page.dart';
 
 class Section3Mobile extends StatefulWidget {
   const Section3Mobile({super.key});
@@ -62,7 +66,10 @@ class _Section3MobileState extends State<Section3Mobile> {
                           isHovering = val;
                         });
                       },
-                      onTap: () {},
+                      onTap: () async {
+                        await launchUrl(Uri.parse(
+                            'https://machiiko.github.io/dedi-punya/'));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 5),
@@ -106,7 +113,10 @@ class _Section3MobileState extends State<Section3Mobile> {
                           isHovering2 = val;
                         });
                       },
-                      onTap: () {},
+                      onTap: () async {
+                        await launchUrl(Uri.parse(
+                            'https://machiiko.github.io/bilhaqi-pdf/'));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 5),
@@ -150,7 +160,12 @@ class _Section3MobileState extends State<Section3Mobile> {
                           isHovering3 = val;
                         });
                       },
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AlvinHomePage()));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 5),
@@ -194,7 +209,12 @@ class _Section3MobileState extends State<Section3Mobile> {
                           isHovering4 = val;
                         });
                       },
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AlipHomePage()));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 5),
@@ -238,7 +258,12 @@ class _Section3MobileState extends State<Section3Mobile> {
                           isHovering4 = val;
                         });
                       },
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TitoHomePage()));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 5),
@@ -278,43 +303,6 @@ class _Section3MobileState extends State<Section3Mobile> {
                   ],
                 ),
               ),
-
-              // Flexible(
-              //   //fit: FlexFit.tight,
-              //   flex: 3,
-              //   child: Container(
-              //     margin: EdgeInsets.only(left: 10),
-              //     child: Column(
-              //       children: [
-              //         //Select button
-              //         Container(
-              //           margin: EdgeInsets.only(top: 50),
-              //           child: OutlinedButton(
-              //             onPressed: () {
-              //               if (_current == 0) {
-              //                 Navigator.push(
-              //                     context,
-              //                     MaterialPageRoute(
-              //                         builder: (context) => Section2()));
-              //               } else if (_current == 1) {
-              //                 Navigator.push(
-              //                     context,
-              //                     MaterialPageRoute(
-              //                         builder: (context) => HomePage()));
-              //               }
-              //             },
-              //             child: Text(
-              //               "Select",
-              //               style: TextStyle(color: Colors.white, fontSize: 30),
-              //             ),
-              //             style: OutlinedButton.styleFrom(
-              //                 side: BorderSide(color: Colors.white)),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
@@ -324,7 +312,7 @@ class _Section3MobileState extends State<Section3Mobile> {
               margin: EdgeInsets.only(top: 10),
               child: _current == 0
                   ? Text(
-                      "Programer",
+                      "Main Developer",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 36,
@@ -356,7 +344,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                                 )
                               : _current == 4
                                   ? Text(
-                                      "Software Tester",
+                                      "Second Developer",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 36,
@@ -371,7 +359,7 @@ class _Section3MobileState extends State<Section3Mobile> {
               margin: EdgeInsets.only(top: 15),
               child: _current == 0
                   ? Text(
-                      "Nada Musyafa Bilhaqi 16 years old boy that have lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+                      "Dandy Dzakwan Budiman, 17 years old boy, Precident of OSERCIK (OSIS PERGURUAN CIKINI) a good leader at his place. ",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 12,
@@ -380,7 +368,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                     )
                   : _current == 1
                       ? Text(
-                          "Nada Musyafa Bilhaqi 16 years old boy that have lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+                          "Nada Musyafa Bilhaqi, 16 years old boy that have an experience at big company, and have a good impact for that company. Nada is a Vice Precident at OSERCIK (OSIS PERGURUAN CIKINI).",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 12,
@@ -389,7 +377,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                         )
                       : _current == 2
                           ? Text(
-                              "Nada Musyafa Bilhaqi 16 years old boy that have lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+                              "Alvin Alfarizi Putra L, 17 years old boy from Jakarta, have a big dream and 90% different mindset from most Indonesian. You can call me Fariz or Alvin.  ",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -398,7 +386,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                             )
                           : _current == 3
                               ? Text(
-                                  "Nada Musyafa Bilhaqi 16 years old boy that have lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+                                  "Ananda Alif Raditya, 17 years old boy that have an experience at big company, and have a good impact for that company, Alif doing intership at the same place like Nada’s",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 12,
@@ -407,7 +395,7 @@ class _Section3MobileState extends State<Section3Mobile> {
                                 )
                               : _current == 4
                                   ? Text(
-                                      "Nada Musyafa Bilhaqi 16 years old boy that have lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+                                      "Bagus Tito Wijoyo, 16 years old boy, duo of Alvin Alfarizi, have slightly same mindset like Alvin’s. Intermediate Guitarist, have a dream to become guitarist and Profesional Programmer.",
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 12,
@@ -466,5 +454,12 @@ class _Section3MobileState extends State<Section3Mobile> {
         )
       ]),
     );
+  }
+
+  Future<void> _launchUrl(String url,
+      {bool forceWebView = false, bool enableJavaScript = false}) async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    }
   }
 }

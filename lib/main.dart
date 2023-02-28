@@ -21,7 +21,7 @@ class MyWeb extends StatelessWidget {
         ),
         title: 'Tes',
         debugShowCheckedModeBanner: false,
-        home: AlvinHomePage()
+        home: HomePage()
         //ResponsiveLayout(
         //  mobileScreen: HomePageMobile(), dekstopScreen: HomePage()),
         );
