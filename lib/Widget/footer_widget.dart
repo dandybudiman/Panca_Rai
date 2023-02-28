@@ -250,7 +250,7 @@ class _FooterAlvinState extends State<FooterAlvin> {
                 margin: EdgeInsets.only(right: 35, left: 20),
                 child: InkWell(
                   onTap: () async {
-                    await launchUrl(Uri.parse('https://wa.me/6285706269269'));
+                    await launchUrl(Uri.parse('http://wa.me/6285695412765'));
                   },
                   child: Image.asset(
                     'assets/images/wa.png',
@@ -263,7 +263,7 @@ class _FooterAlvinState extends State<FooterAlvin> {
                 child: InkWell(
                   onTap: () async {
                     await launchUrl(Uri.parse(
-                        'https://instagram.com/joyxsl_?igshid=YmMyMTA2M2Y='));
+                        'https://instagram.com/a.alfarizi._?igshid=Mzc0YWU1OWY='));
                   },
                   child: Image.asset(
                     'assets/images/insta.png',
@@ -276,7 +276,7 @@ class _FooterAlvinState extends State<FooterAlvin> {
                 child: InkWell(
                   onTap: () async {
                     await launchUrl(Uri.parse(
-                        'https://twitter.com/s0yyu_?t=JJNHSR7V0Fn6_3D3mruwAA&s=08'));
+                        'https://twitter.com/nyehunyehu?t=eT9s8FQyJRQM3Lks1nziYA&s=09'));
                   },
                   child: Image.asset(
                     'assets/images/twit.png',
@@ -291,10 +291,10 @@ class _FooterAlvinState extends State<FooterAlvin> {
                 child: InkWell(
                   onTap: () async {
                     await launchUrl(Uri.parse(
-                        'https://www.linkedin.com/in/bagus-tito-579bba234'));
+                        'http://discord.com/users/563626096290037780'));
                   },
                   child: Image.asset(
-                    'assets/images/linkedin.png',
+                    'assets/images/dc.png',
                     fit: BoxFit.cover,
                   ),
                 ),

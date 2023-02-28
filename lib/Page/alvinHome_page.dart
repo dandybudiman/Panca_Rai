@@ -162,7 +162,7 @@ class _AlvinHomePageState extends State<AlvinHomePage> {
                                             backgroundColor: Colors.transparent,
                                             elevation: 0),
                                         child: Image.asset(
-                                            'assets/images/garisgaris.png',
+                                            'assets/images/garisgarisputih.png',
                                             fit: BoxFit.cover),
                                       ),
                                     )
