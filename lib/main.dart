@@ -19,7 +19,7 @@ class MyWeb extends StatelessWidget {
         theme: ThemeData(
           textTheme: GoogleFonts.poppinsTextTheme(),
         ),
-        title: 'Tes',
+        title: 'Panca-Rai',
         debugShowCheckedModeBanner: false,
         home: HomePage()
         //ResponsiveLayout(

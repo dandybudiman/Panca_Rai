@@ -22,7 +22,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Image.asset('assets/images/coolpet.png'),
+            child: Image.asset('assets/images/calPiao_alpin.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -63,7 +63,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
               )),
           Container(
             margin: EdgeInsets.only(top: 50),
-            child: Image.asset('assets/images/coolpet.png'),
+            child: Image.asset('assets/images/pancaRai_alpin.png'),
           ),
           Align(
               alignment: Alignment.topLeft,
@@ -90,7 +90,7 @@ class _AlvinSection3MobileState extends State<AlvinSection3Mobile> {
                         margin: EdgeInsets.only(top: 30, right: 50, left: 50),
                         width: 594,
                         child: Text(
-                          "My Personal Project to make studio games for my Passive income",
+                          "Mastering Indonesian Language, using english as second language, and become Panca-Rai’s page translator.",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 16,

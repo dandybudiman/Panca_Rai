@@ -117,7 +117,7 @@ class _AlvinSection3State extends State<AlvinSection3> {
                                   EdgeInsets.only(top: 22, left: 50, right: 20),
                               width: 594,
                               child: Text(
-                                "My Personal Project to make studio games for my Passive income",
+                                "Mastering Indonesian Language, using english as second language, and become Panca-Rai’s page translator.",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
